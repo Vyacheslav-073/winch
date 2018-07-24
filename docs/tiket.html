@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказать лебёдку</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/amg-anahit/anahit.css">
+    <link rel="stylesheet" href="fonts/notoserif/notoserif.css">
+</head>
+<body>
+   
+   <h1 id="top">Лебёдка маневровая</h1>
+   
+    <ul class="navigation">
+       <li><a href="index.html">Главная страница</a></li>
+       <li><a href="photo.html">фотогалерея</a></li>
+       <li><a href="contacts.html">Контакты</a></li>
+       <li><a href="tiket.html">Заказать</a></li>
+   </ul>
+   
+   <h2>Заказать лебёдку</h2>
+   
+   <form>
+      
+       <h3>Основные данные</h3>
+       
+       <label for="name">Ваше Ф.И.О</label>
+       <input type="text" name="fio" id="name" required>
+       
+       <label for="email">Email</label>
+       <input type="email" name="email" id="email" required>
+       
+       <label for="phone">Телефон</label>
+       <input type="text" name="phone" id="phone" required>
+       <br><br>
+       
+       <label for="type_winch">Тип лебёдки</label>
+       <select name="type_winch" id="type_winch">
+           <option value="1">Маневровая лебёдка</option>
+           <option value="2">Монтажная лебёдка</option>
+           <option value="3">Тяговая лебёдка</option>
+           <option value="4">Шахтная лебёдка</option>
+       </select>
+       
+       <h2>Комплектация</h2>
+       
+       <input type="radio" id="type_with_rope" name="type_winch" value="type_with_rope">
+       <label for="type_with_rope">С канатом</label><br>
+       
+       <input type="radio" id="type_without_rope" name="type_winch" value="type_without_rope">
+       <label for="type_without_rope">Без каната</label><br><br>
+       
+       <h3>Дополнительные опции</h3>
+       
+       <input type="checkbox" id="option_1" name="option_1">
+       <label for="option_1">Установка электрощита</label><br>
+       
+       <input type="checkbox" id="option_2" name="option_2">
+       <label for="option_2">Заказ с доставкой</label><br>
+       
+       <input type="checkbox" id="option_3" name="option_3">
+       <label for="option_3">Доставка в твёрдой упаковке</label><br><br>
+       
+       <label for="comment">Техзадание к заказу</label><br>
+       <textarea name="name" id="comment" cols="60" rows="4"></textarea><br><br>
+       <input type="submit" value="Заказать лебёдку">
+       
+    </form> 
+   
+   <p><a href="#top">Наверх</a></p>
+    
+</body>
+</html>
